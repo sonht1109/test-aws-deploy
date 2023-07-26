@@ -7,7 +7,7 @@ const port = 3000;
 
 const pool = new Pool({
   user: "postgres",
-  host: "localhost",
+  host: "lab-7.cxagqllyrvfc.ap-southeast-1.rds.amazonaws.com",
   password: "htson2000",
   port: 5432,
   ssl: true,
