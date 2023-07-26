@@ -10,7 +10,7 @@ const pool = new Pool({
   host: "lab-7.cxagqllyrvfc.ap-southeast-1.rds.amazonaws.com",
   password: "password",
   port: 5432,
-  ssl: true,
+  ssl: false,
 });
 
 app.use(bodyParser.json());
