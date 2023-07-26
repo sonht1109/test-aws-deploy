@@ -10,6 +10,7 @@ const pool = new Pool({
   host: "localhost",
   password: "htson2000",
   port: 5432,
+  ssl: true,
 });
 
 app.use(bodyParser.json());
@@ -25,7 +26,7 @@ app.get("/", (request, response) => {
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
-  pool.connect().then(res => {
-    console.log('Successfully connect to DB')
-  })
+  pool.connect().then((res) => {
+    console.log("Successfully connect to DB");
+  });
 });
